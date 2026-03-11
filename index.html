@@ -1,40 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>page-1</title>
-</head>
-<body>
-
-    <div class="container">
-        <div class="content">
-            <div class="titles">
-                <h1><span>Tashqi</span> reklama</h1>
-                <h2>kerakmi?</h2>
-            </div>
-
-            <p class="title-text">ReCore shahardagi <span> deyarli barcha reklama obektlarini bitta jamlaydi </span> va ularni<br> tadbirkorlarning sohalariga qarab ularga<br><span> mos bo'lgan joylarni tafsiya etadi.</span></p>
-    
-            <p class="title-text"> <span> Har qanday</span> biznes rivojlanishi uchun  unga<br> yaxshi tashqi reklama kerak, bu borada<br> bizning dasturimiz <span> yordam beradi.</span></p>
-
-            <a class="btn" href="../page-2/index.html">Keyingisi  <img src="../images/arrow-removebg-preview.png"></a>
-
-
-            <div class="points-box">
-                <div class="points"><a href="#"></a></div>
-                <div class="points"><a href="#"></a></div>
-                <div class="points"><a href="#"></a></div>
-                <div class="points"><a href="#"></a></div>
-                <div class="points"><a href="#"></a></div>
-                <div class="points"><a href="#"></a></div>
-             </div>
-
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Savdo Boshqaruv Tizimi - Preview</title>
+    <link rel="stylesheet" href="static/core/css/login.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <section class="left-panel">
+        <div class="brand-icon">s</div>
+        <h1>Savdo Boshqaruv <span>Tizimi</span></h1>
+        <p>Mahsulotlar, buyurtmalar va ombor boshqaruvini bir joyda olib boring.</p>
+        <div class="stats">
+          <article><strong>8+</strong><small>Sahifalar</small></article>
+          <article><strong>2</strong><small>Rol</small></article>
+          <article><strong>100%</strong><small>O'zbek</small></article>
         </div>
-    </div>
-
-</body>
+      </section>
+      <section class="right-panel">
+        <form class="login-card" id="loginForm">
+          <h2>Xush kelibsiz!</h2>
+          <p>Login va parolni kiriting</p>
+          <label><span>👤</span><input type="text" id="username" placeholder="Login" /></label>
+          <label>
+            <span>🔒</span><input type="password" id="password" placeholder="Parol" />
+            <button type="button" id="togglePassword" class="inline-btn">Ko'rsat</button>
+          </label>
+          <button type="submit" class="submit-btn">Kirish</button>
+        </form>
+      </section>
+    </main>
+    <script defer src="static/core/js/login.js"></script>
+  </body>
 </html>
