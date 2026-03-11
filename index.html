@@ -3,33 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admark - Rasmlar Dasturi</title>
-    <link rel="stylesheet" href="style/style.css" />
+    <title>Savdo Boshqaruv Tizimi - Preview</title>
+    <link rel="stylesheet" href="static/core/css/login.css" />
   </head>
   <body>
-    <main class="app">
-      <header class="hero">
-        <h1>Siz yuborgan rasmlar asosidagi dastur</h1>
-        <p>
-          Quyidagi galereya siz yuklagan banner va reklama rasmlarini qulay ko‘rish,
-          qidirish hamda kattalashtirib ko‘rish uchun tayyorlandi.
-        </p>
-        <input id="search" type="search" placeholder="Rasm nomi bo‘yicha qidiring..." />
-      </header>
-
-      <section id="gallery" class="gallery" aria-live="polite"></section>
+    <main class="layout">
+      <section class="left-panel">
+        <div class="brand-icon">s</div>
+        <h1>Savdo Boshqaruv <span>Tizimi</span></h1>
+        <p>Mahsulotlar, buyurtmalar va ombor boshqaruvini bir joyda olib boring.</p>
+        <div class="stats">
+          <article><strong>8+</strong><small>Sahifalar</small></article>
+          <article><strong>2</strong><small>Rol</small></article>
+          <article><strong>100%</strong><small>O'zbek</small></article>
+        </div>
+      </section>
+      <section class="right-panel">
+        <form class="login-card" id="loginForm">
+          <h2>Xush kelibsiz!</h2>
+          <p>Login va parolni kiriting</p>
+          <label><span>👤</span><input type="text" id="username" placeholder="Login" /></label>
+          <label>
+            <span>🔒</span><input type="password" id="password" placeholder="Parol" />
+            <button type="button" id="togglePassword" class="inline-btn">Ko'rsat</button>
+          </label>
+          <button type="submit" class="submit-btn">Kirish</button>
+        </form>
+      </section>
     </main>
-
-    <dialog id="viewer" class="viewer">
-      <button id="closeViewer" class="close" aria-label="Yopish">✕</button>
-      <img id="viewerImage" src="" alt="Katta ko‘rinish" />
-      <p id="viewerCaption"></p>
-      <div class="controls">
-        <button id="prevBtn">Oldingi</button>
-        <button id="nextBtn">Keyingi</button>
-      </div>
-    </dialog>
-
-    <script src="script.js"></script>
+    <script defer src="static/core/js/login.js"></script>
   </body>
 </html>

@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Savdo Boshqaruv Tizimi - Kirish</title>
+    <link rel="stylesheet" href="{% static 'core/css/login.css' %}" />
+  </head>
+  <body>
+    <main class="layout">
+      <section class="left-panel">
+        <div class="brand-icon">s</div>
+        <h1>Savdo Boshqaruv <span>Tizimi</span></h1>
+        <p>Mahsulotlar, buyurtmalar va ombor boshqaruvini bir joyda olib boring.</p>
+
+        <div class="stats">
+          <article>
+            <strong>8+</strong>
+            <small>Sahifalar</small>
+          </article>
+          <article>
+            <strong>2</strong>
+            <small>Rol</small>
+          </article>
+          <article>
+            <strong>100%</strong>
+            <small>O'zbek</small>
+          </article>
+        </div>
+      </section>
+
+      <section class="right-panel">
+        <form method="post" class="login-card" id="loginForm">
+          {% csrf_token %}
+          <h2>Xush kelibsiz!</h2>
+          <p>Login va parolni kiriting</p>
+
+          {% if error %}
+          <div class="message">{{ error }}</div>
+          {% endif %}
+
+          <label>
+            <span>👤</span>
+            <input type="text" name="username" id="username" placeholder="Login" />
+          </label>
+
+          <label>
+            <span>🔒</span>
+            <input type="password" name="password" id="password" placeholder="Parol" />
+            <button type="button" id="togglePassword" class="inline-btn">Ko'rsat</button>
+          </label>
+
+          <button type="submit" class="submit-btn">Kirish</button>
+        </form>
+      </section>
+    </main>
+
+    <script defer src="{% static 'core/js/login.js' %}"></script>
+  </body>
+</html>
